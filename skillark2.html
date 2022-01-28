@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: rgb(29, 165, 165);
+            font-weight: bold;
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+<script>
+
+  
+function add()
+{
+  var numOne, numTwo,sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.getElementById("answer").value = sum;
+}
+function Diff()
+{
+  var numOne, numTwo,Diff;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  Diff = numOne - numTwo;
+  document.getElementById("differ").value = Diff;
+}
+function Mul()
+{
+  var numOne, numTwo,Mul;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  Mul = numOne*numTwo;
+  document.getElementById("multy").value = Mul;
+}
+function Div()
+{
+  var numOne, numTwo,Div;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  Div = numOne/numTwo;
+  document.getElementById("divi").value = Div;
+}
+function add() {
+var x = document.getElementById("first").value;
+var y =  document.getElementById("second").value;
+if (x == "" || y =="") 
+{
+    alert("Number must be filled out");
+    return false;
+  }
+}
+function Diff() {
+var x = document.getElementById("first").value;
+var y =  document.getElementById("second").value;
+if (x == "" || y =="") 
+{
+    alert("Number must be filled out");
+    return false;
+  }
+}
+function Mul() {
+var x = document.getElementById("first").value;
+var y =  document.getElementById("second").value;
+if (x == "" || y =="") 
+{
+    alert("Number must be filled out");
+    return false;
+  }
+}
+function Div() {
+var x =  document.getElementById("first").value;
+var y =  document.getElementById("second").value;
+if (x == "" || y =="") 
+{
+    alert("Number must be filled out");
+    return false;
+  }
+}
+
+
+</script>
+</head>
+<body>
+<div name="radha">
+<p>Enter the First Number: <input id="first"  name="first"></p>
+<p>Enter the Second Number: <input id="second" name="second"></p>
+</div>
+<button onclick="add()">Add</button>
+<button onclick="Diff()">Diff</button>
+<button onclick="Mul()">Mul</button>
+<button onclick="Div()">Div</button>
+<p>Sum = <input id="answer"></p>
+<p>Diff = <input id="differ"></p>
+<p>Mul = <input id="multy"></p>
+<p>Div = <input id="divi"></p>
+</body>
+</html>
